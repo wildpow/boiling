@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 
+const scaleNames = {
+  c: 'Celsius',
+  f: 'Fahrenheit'
+};
+
 class TemperatureInput extends Component {
   constructor(props) {
     super(props);
@@ -9,7 +14,7 @@ class TemperatureInput extends Component {
     this.props.onTemperatureChange(e.target.value);
   }
   render() {
-    const { temperature } = this.state;
+    const { temperature } = this.props.temperature;
     const scale = this.props.scale;
     return (
       <fieldset>
@@ -22,3 +27,5 @@ class TemperatureInput extends Component {
     )
   }
 }
+
+export default TemperatureInput;

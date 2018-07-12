@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Calculator from './version2/Calculator';
+import Calculator from './version3/Calculator';
 
 class App extends Component {
   render() {
